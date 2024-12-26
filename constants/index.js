@@ -2,9 +2,9 @@ import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 
 
-export const HERO_CONTENT = `I am a dedicated full-stack developer with a passion for creating efficient and user-friendly web applications. I am currently pursuing a Bachelor's degree in B.Sc. (Computer Science) from the Department of Computer Science, Gujarat University.
+export const HERO_CONTENT = `Hello World 👋! I am a dedicated full-stack developer with a passion for creating efficient and user-friendly web applications. I am currently pursuing a Bachelor's degree in B.Sc. (Computer Science) from the Department of Computer Science, Gujarat University.\n\n I have experience working with technologies including ReactJS, Next.js, Node.js, MySQL, and MongoDB. My journey into web development began with a curiosity about how things work, which has evolved into a passion that challenges me to continuously learn, adapt, and improve. I enjoy working in collaborative settings and value the opportunity to collaborate with others to create impactful applications that meet user needs and business goals.`;
 
-I work with technologies such as ReactJS, Next.js, Node.js, MySQL, and MongoDB. My journey into web development began with a curiosity about how things work, and it has grown into a habit that challenges me to continuously learn, adapt, and improve. I enjoy working in collaborative settings and value the opportunity to collaborate with others to create impactful applications that meet user needs and business goals.`;
+
 
 
 
