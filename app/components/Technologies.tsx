@@ -17,7 +17,7 @@ const MotionDiv = dynamic(
   { ssr: false }
 );
 
-const iconVariants = (duration: any) => ({
+const iconVariants = (duration: number) => ({
   initial: { y: -10 },
   animate: {
     y: [10, -10],

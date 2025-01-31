@@ -27,7 +27,7 @@ const Hero = () => {
     { ssr: false }
   );
 
-  const container = (delay: any) => ({
+  const container = (delay: number) => ({
     hidden: { x: -100, opacity: 0 },
     visible: {
       x: 0,
