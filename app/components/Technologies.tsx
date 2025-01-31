@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { FaGit, FaGithub, FaJava, FaNodeJs } from "react-icons/fa6";
+import {  FaJava, FaNodeJs } from "react-icons/fa6";
 import { RiReactjsLine } from "react-icons/ri";
 import {
   SiMongodb,

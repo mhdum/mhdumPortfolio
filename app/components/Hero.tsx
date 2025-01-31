@@ -3,7 +3,7 @@ import React from "react";
 import { HERO_CONTENT } from "@/constants";
 import profile from "@/assets/profile2.jpg";
 import Image from "next/image";
-import { motion } from "framer-motion";
+
 import dynamic from "next/dynamic";
 
 const Hero = () => {
