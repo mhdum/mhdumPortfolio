@@ -12,6 +12,7 @@ const MotionDiv = dynamic(
   () => import("framer-motion").then((mod) => mod.motion.div),
   { ssr: false },
 );
+
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -28,16 +29,8 @@ const Projects = () => {
           const wrapperClasses =
             "mb-8 flex flex-wrap lg:justify-center group hover:shadow-lg hover:-translate-y-1 transition-transform duration-200 cursor-pointer";
           const isExternal = project.link && /^https?:\/\//.test(project.link);
-          const Container: any = project.link ? Link : "div";
-          return (
-            <Container
-              key={index}
-              href={project.link ?? undefined}
-              {...(isExternal && project.link
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : {})}
-              className={wrapperClasses}
-            >
+          const content = (
+            <>
               <MotionDiv
                 className="w-full lg:w-1/4"
                 whileInView={{ opacity: 1, x: 0 }}
@@ -69,7 +62,24 @@ const Projects = () => {
                   </span>
                 ))}
               </MotionDiv>
-            </Container>
+            </>
+          );
+
+          return project.link ? (
+            <Link
+              key={index}
+              href={project.link}
+              {...(isExternal
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
+              className={wrapperClasses}
+            >
+              {content}
+            </Link>
+          ) : (
+            <div key={index} className={wrapperClasses}>
+              {content}
+            </div>
           );
         })}
       </div>
