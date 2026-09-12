@@ -9,22 +9,22 @@ import dynamic from "next/dynamic";
 const Hero = () => {
   const MotionH1 = dynamic(
     () => import("framer-motion").then((mod) => mod.motion.h1),
-    { ssr: false }
+    { ssr: false },
   );
 
   const MotionSpan = dynamic(
     () => import("framer-motion").then((mod) => mod.motion.span),
-    { ssr: false }
+    { ssr: false },
   );
 
   const MotionP = dynamic(
     () => import("framer-motion").then((mod) => mod.motion.p),
-    { ssr: false }
+    { ssr: false },
   );
 
   const MotionImg = dynamic(
     () => import("framer-motion").then((mod) => mod.motion.div),
-    { ssr: false }
+    { ssr: false },
   );
 
   const container = (delay: number) => ({
@@ -79,7 +79,7 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
-              <Image src={profile} alt="profile" />
+              <Image src={profile} alt="profile" priority />
             </MotionImg>
           </div>
         </div>
